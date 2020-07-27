@@ -1,0 +1,150 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: serif;
+    font-size: 14pt;
+    font-feature-settings: "palt";
+
+}
+.global-nav{
+    height: 120px;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+
+    position: fixed;
+    background: #fff;
+    width: 100%;
+}
+.global-nav h1{
+    flex: 1;
+}
+.global-nav ul{
+    list-style: none;
+    display: flex;
+}
+.global-nav ul li{
+    padding: 1rem;
+}
+
+
+.hero{
+    height: 80vh;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+}
+.hero-text{
+    font-size: 3rem;
+    color: #aaa;
+    padding-top: 3rem;
+}
+
+
+.vision{
+    
+    background: #fff;
+    
+    padding: 120px;
+    text-align: center;
+    align-items: center;
+    font-size: 16pt;
+}
+.vision h3{
+    font-size: 3rem;
+    color: #bbb;
+}
+.vision-text{
+    letter-spacing: 0.25rem;
+    font-size: 2rem;
+    color: #bbb;
+}
+
+
+.service h3{
+    text-align: center;
+    margin-top: 3rem;
+}
+.service-item-container{
+    display: flex;
+}
+.service-item{
+    border: 2px solid #ccc;
+    margin: 3rem 2rem 5rem;
+}
+.service-header{
+    background-color: #ccc;
+    height: 5rem;
+}
+.service-item h4{
+    padding: 0.5rem;
+}
+.service-item p{
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    padding: 0.25rem;
+}
+
+
+.voice{
+    padding: 0 5rem 8rem;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.voice h3{
+    padding: 4rem;
+}
+.voice-item-container{
+    border:2px solid #ccc;
+    border-radius: 20px;
+}
+.voice-item{
+    display:inline-flex;
+}
+.voice-photo{
+    height: 100px;
+    width: 100px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto;
+}
+.voice-text{
+    text-align: left;
+    padding: 1rem;
+    width: 75%;
+}
+.voice-text h5{
+    padding: 0.5rem 0.5rem;
+}
+.voice-text p{
+    padding: 0.5rem;
+}
+
+
+footer{
+    color: #bbb;
+    background-color:#333;
+    padding: 2rem 3rem 0;
+    text-align: center;
+    align-items: center;
+}
+footer nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+footer nav ul li{
+    margin: 0.5rem;
+}
+.copyright{
+    padding-top: 4rem;
+}

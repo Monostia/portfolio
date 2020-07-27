@@ -1,0 +1,19 @@
+*{
+    background-color: #e0e0e0;
+}
+
+body{
+    margin: 1em 7em;
+    width: 100%;
+    text-align: left;
+}
+
+div{
+    font-size: 20px;
+}
+div label.contacttext{
+    font-size: 100px;
+}
+div select{
+    font-size: 20px;
+}

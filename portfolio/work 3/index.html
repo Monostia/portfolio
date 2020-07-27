@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>お問い合わせフォーム</h1>
+    <p>弊社にご関心をお持ちいただきますして、ありがとうございます。
+        <br>ご相談や弊社施策についてなど、お気軽にお問合わせください。
+        <br>お送りいただきました内容を確認次第、担当者よりご連絡させていただきます。
+    </p>
+
+
+    <form action="https://us-central1-web-design-809ef.cloudfunctions.net/contact" method="post">
+        <input type="hidden" name="number" value="x19000">
+
+        
+        <div>
+            <label for="onamae">お名前</label>
+            <input type="text" id="onamae" name="onamae" placeholder="例)山田太郎">
+        </div>
+        <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="mail" name="email"  placeholder="例)◯◯@example.com">
+        </div>
+        <div>
+            <label for="telno">電話番号</label>
+            <input type="tel" id="telno" name="telno" placeholder="例)000000000">
+        </div>
+        <div>
+            <label for="ismustrep">返信は必要ですか？</label>
+            <input type="checkbox" id="ismustrep" name="ismustrep">
+            <label for="ismustrep">必要です</label>
+        </div>
+        <div>
+            <label for="means">ご希望の連絡手段</label>
+            <input type="radio" id="mail" name="means" value="1">メール
+            <input type="radio" id="tel" name="means" value="2">電話
+        </div>
+        <div>
+            <label for="contacttype">お問い合わせ種別</label>
+            <select name="contacttype">
+                <option>選択してください</option>
+                <option value="1">Webサイト作成依頼</option>
+                <option value="2">見積もり依頼</option>
+                <option value="3">その他お問い合わせ</option>
+            </select>
+        </div>
+        <div>
+            <label for="contacttext">お問い合わせ内容</label>
+            <br><textarea id="contacttext" name="contacttext" rows="10" cols="55" placeholder="お問い合わせ内容を入力"></textarea>
+        </div>
+        <div>
+            <button type="submit">
+                送信
+            </button>
+
+        </div>
+    </form>
+</body>
+</html>

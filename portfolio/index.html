@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/main.css">
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
+    
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <h1>Portfolio</h1>
+
+    <section class="voice">
+      <h3>自己紹介</h3>
+      <div class="voice-item-container">
+        <div class="voice-item">
+          <div class="voice-photo">
+            <img src="./img/icon.jpg" ></div>
+          <div class="voice-text">
+            <h5>小野 雅也</h5>
+            <p>愛知工業大学2年<br>情報科学部　情報科学科　メディア情報専攻</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="drawer drawer--left">
+	    <header role="banner">
+	    	<button type="button" class="drawer-toggle drawer-hamburger">
+		    	<span class="sr-only">toggle navigation</span>
+		    	<span class="drawer-hamburger-icon"></span>
+		    </button>
+		    <nav class="drawer-nav" role="navigation">
+		    	<ul class="drawer-menu">
+			    	<li><a class="drawer-brand" href="index.html">HOME</a></li>
+			    	<li><a class="drawer-menu-item" href="./work 1/index.html">work No.1</a></li>
+            <li><a class="drawer-menu-item" href="./work 2/index.html">work No.2</a></li>
+            <li><a class="drawer-menu-item" href="./work 3/index.html">work No.3</a></li>
+			    </ul>
+		    </nav>
+        </header>
+    </div>
+	
+    <script>
+$(document).ready(function() {
+	 $('.drawer').drawer();
+});
+</script>
+<div class="slider">
+    <div><img src="img/img01.jpg"></div>
+    <div><img src="img/img02.jpg"></div>
+    <div><img src="img/img03.jpg"></div>
+</div>
+<div class="works-all">
+  <div class="works">
+	  <a href="./work 1/index.html">
+      <img src="img/img01.jpg" width="300px" height="auto" alt="work1">
+	      <div class="mask">
+		      <div class="caption">work No.1</div>
+        </div>
+    </a>
+  </div>
+
+  <div class="works">
+	  <a href="./work 2/index.html">
+      <img src="img/img02.jpg" width="300px" height="auto" alt="work1">
+        <div class="mask">
+	        <div class="caption">work No.2</div>
+        </div>
+    </a>
+  </div>
+  
+  <div class="works">
+	  <a href="./work 3/index.html">
+      <img src="img/img03.jpg" width="300px" height="auto" alt="work1">
+        <div class="mask">
+	        <div class="caption">work No.3</div>
+        </div>
+    </a>
+  </div>
+
+</div>
+
+</body>
+
+</html>
